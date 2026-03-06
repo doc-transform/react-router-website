@@ -50,8 +50,8 @@ export function fixupRefName(ref: string): string {
     return `v${ref}`;
   }
 
-  // add react-router@ because that's what the tags are called after changesets
-  return `react-router@${ref}`;
+  // add react-router-zh@ because that's what the tags are called after changesets
+  return `react-router-zh@${ref}`;
 }
 
 function isRefBranch(ref: string): boolean {

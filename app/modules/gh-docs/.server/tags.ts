@@ -77,7 +77,7 @@ async function getAllReleases(
             // ideally all we care about is release.name, but we have some old
             // releases that don't have that set, so we check the tag name too
             // After changesets, we look for react-router@6.4.0
-            release.tag_name.split("@")[0] === primaryPackage ||
+            release.tag_name.split("@")[0] === `${primaryPackage}-zh` ||
             // pre-changesets, tag_name started with "v"
             release.tag_name.startsWith("v6"),
         );
