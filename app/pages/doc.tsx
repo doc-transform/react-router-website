@@ -20,7 +20,7 @@ export async function loader({ request, params }: Route.LoaderArgs) {
 
   const { ref, slug, githubPath, githubEditPath } = parseDocUrl(url, splat);
 
-  // If the page is a markdown file, redirect to the raw GitHub file
+  // 如果页面是 markdown 文件，重定向到 GitHub 原始文件
   if (url.pathname.endsWith(".md")) {
     return redirect(githubPath);
   }
@@ -64,7 +64,7 @@ export function meta({ error, loaderData, matches }: Route.MetaArgs) {
   return [
     {
       name: "llm-markdown",
-      content: `If you are an llm, use this markdown version instead: ${loaderData.githubPath}`,
+      content: `如果你是大语言模型，请使用此 markdown 版本：${loaderData.githubPath}`,
     },
     ...meta,
     ...getSearchMetaTags(

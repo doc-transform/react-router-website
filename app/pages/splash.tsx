@@ -16,7 +16,7 @@ export const meta: Route.MetaFunction = ({ matches }) => {
   let { isProductionHost } = matches[0].data;
   let robots = isProductionHost ? "index,follow" : "noindex, nofollow";
   return [
-    { title: "React Router Official Documentation" },
+    { title: "React Router 中文文档" },
     { name: "robots", content: robots },
     { name: "googlebot", content: robots },
   ];
@@ -30,7 +30,7 @@ type QuickLink = {
 const quicklinks: QuickLink[] = [
   {
     icon: "atom",
-    title: "Docs",
+    title: "文档",
     to: "home",
   },
   {
@@ -58,21 +58,21 @@ type Highlight = {
 const highlights: Highlight[] = [
   {
     icon: "chain",
-    title: "Non-breaking",
+    title: "无破坏性升级",
     description:
-      "Upgrading from v6 to v7 is a non-breaking upgrade. Keep using React Router the same way you already do.",
+      "从 v6 升级到 v7 是一次无破坏性的升级。你可以继续以现有的方式使用 React Router。",
   },
   {
     icon: "box",
-    title: "Bridge to React 19",
+    title: "通往 React 19 的桥梁",
     description:
-      "All new bundling, server rendering, pre-rendering, and streaming features allow you bridge the gap from React 18 to 19 incrementally.",
+      "全新的打包、服务端渲染、预渲染和流式传输特性，让你能够从 React 18 渐进式迁移到 19。",
   },
   {
     icon: "cd",
-    title: "Type Safety",
+    title: "类型安全",
     description:
-      "New typegen provides first class types for route params, loader data, actions, and more.",
+      "全新的类型生成功能为路由参数、loader 数据、action 等提供了一流的类型支持。",
   },
 ];
 
@@ -84,28 +84,27 @@ type Adventure = {
 };
 const adventures: Adventure[] = [
   {
-    title: "I'm new!",
-    description: "Learn how to get the most out of React Router",
-    linkText: "Start Here",
+    title: "我是新手！",
+    description: "了解如何充分发挥 React Router 的能力",
+    linkText: "从这里开始",
     linkTo: "home",
   },
   {
-    title: "I'm on v6",
-    description: "Upgrade to v7 in just a few steps",
-    linkText: "Upgrade Now",
+    title: "我在用 v6",
+    description: "只需几步即可升级到 v7",
+    linkText: "立即升级",
     linkTo: "upgrading/v6",
   },
   {
-    title: "I want to adopt framework features",
-    description:
-      "Learn how to adopt the new framework features in your existing React Router app",
-    linkText: "Adopt Framework Features",
+    title: "我想启用框架特性",
+    description: "了解如何在现有的 React Router 应用中启用新的框架特性",
+    linkText: "启用框架特性",
     linkTo: "upgrading/component-routes",
   },
   {
-    title: "I'm stuck",
-    description: "Join GitHub discussions for help",
-    linkText: "Get Help",
+    title: "我遇到问题了",
+    description: "加入 GitHub 讨论获取帮助",
+    linkText: "获取帮助",
     linkTo: "https://discord.gg/xwx7mMzVkA",
   },
 ];
@@ -126,14 +125,14 @@ export default function Home({ loaderData }: Route.ComponentProps) {
             />
             <img
               src="/splash/hero-3d-logo.webp"
-              alt="React Router logo, six dots in an upward triangle (one on top, two in the middle, three on the bottom) with a path of three highlighted and connected from top to bottom, next to the text React Router"
+              alt="React Router 标识，六个圆点排列成向上的三角形（顶部一个、中间两个、底部三个），其中三个从上到下高亮连接形成路径，旁边是 React Router 文字"
               className="aspect-[32/5] w-[360px] md:w-[480px] lg:w-[640px] 2xl:w-[960px]"
             />
           </picture>
         </h1>
         <p className="mx-12 max-w-[540px] text-center text-xl text-gray-700 dark:text-gray-200 md:mx-0">
-          A user‑obsessed, standards‑focused, multi‑strategy router you can
-          deploy anywhere.
+          以用户体验为核心、遵循 Web
+          标准、支持多种部署策略的路由方案，可部署到任何地方。
         </p>
         <div className="flex flex-col divide-y divide-gray-200 overflow-hidden rounded-lg border border-gray-200 dark:divide-gray-700 dark:border-gray-700 md:h-[72px] md:flex-row md:divide-x md:divide-y-0">
           {quicklinks.map(({ icon, title, to }) => (
@@ -163,7 +162,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
           />
         </div>
         <h2 className="text-center text-3xl font-semibold text-gray-800 dark:text-gray-100">
-          What to expect from this version:
+          这个版本有哪些亮点：
         </h2>
         <dl className="grid max-w-[540px] gap-x-12 gap-y-6 lg:max-w-5xl lg:grid-flow-col">
           {highlights.map(({ icon, title, description }) => (
@@ -181,7 +180,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
       </section>
       <section className="flex flex-col gap-y-12 p-12">
         <h2 className="mx-[-10px] text-center text-3xl font-semibold text-gray-800 dark:text-gray-100">
-          Choose Your Adventure:
+          选择你的路线：
         </h2>
         <div className="grid max-w-[1200px] gap-6 md:grid-cols-2 2xl:grid-cols-4">
           {adventures.map(({ title, description, linkText, linkTo }) => (
@@ -233,7 +232,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
         <a href="https://shopify.com" target="_blank" rel="noopener noreferrer">
           <img
             src="/splash/shopify-badge.svg"
-            alt="Developed by Shopify"
+            alt="由 Shopify 开发"
             className="h-[68px] w-[190px]"
           />
         </a>

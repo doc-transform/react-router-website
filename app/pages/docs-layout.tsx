@@ -91,10 +91,9 @@ export default function DocsLayout({ loaderData }: Route.ComponentProps) {
           <div
             ref={docsContainer}
             className={clsx(
-              // add scroll margin to focused elements so that they aren't
-              // obscured by the sticky header
+              // 为获得焦点的元素添加滚动边距，避免被粘性头部遮挡
               "[&_*:focus]:scroll-mt-[8rem] lg:[&_*:focus]:scroll-mt-[5rem]",
-              // Account for the left navbar
+              // 为左侧导航栏预留空间
               "min-h-[80vh] lg:ml-3 lg:w-[calc(100%-var(--nav-width))]",
               "flex flex-col lg:pl-6 xl:pl-10 2xl:pl-12",
             )}

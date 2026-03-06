@@ -47,13 +47,12 @@ export default function Index({ matches }: Route.ComponentProps) {
 function V7() {
   let mainLinks = [
     {
-      title: "I'm New!",
+      title: "我是新手！",
       description: (
         <div>
-          We recommend you use React Router as your framework. Check out the{" "}
-          <span className="underline">Getting Started</span> docs where you'll
-          get familiar with installation, routes, data handling, pending UI and
-          more.
+          我们推荐你将 React Router 作为框架使用。查看{" "}
+          <span className="underline">快速上手</span>{" "}
+          文档，了解安装、路由、数据处理、加载状态 UI 等内容。
         </div>
       ),
       slug: "start/installation",
@@ -61,14 +60,13 @@ function V7() {
       svg: undefined,
     },
     {
-      title: "Upgrade from React Router v6",
+      title: "从 React Router v6 升级",
       description: (
         <div>
-          v7 is a non-breaking upgrade if you are caught up on all future flags.
-          While v7 includes new framework features, you can continue to use it
-          as you currently do. Head over to the{" "}
-          <span className="underline">Upgrade Guide</span> to get up to date
-          quickly.
+          如果你已经启用了所有 future flags，v7
+          是一次无破坏性的升级。虽然 v7
+          包含了新的框架特性，但你完全可以沿用现有的使用方式。前往{" "}
+          <span className="underline">升级指南</span> 快速了解变更。
         </div>
       ),
       slug: "upgrading/v6",
@@ -76,13 +74,13 @@ function V7() {
       svg: undefined,
     },
     {
-      title: "Framework or Library?",
+      title: "框架还是库？",
       description: (
         <div>
-          React Router can be used maximally as a framework or minimally as a
-          set of declarative routing components just like previous versions. To
-          figure out how you'd like to use it, check out the{" "}
-          <span className="underline">Routing Strategies</span> guide.
+          React Router
+          既可以作为功能完备的框架使用，也可以像之前的版本一样仅作为声明式路由组件库使用。查看{" "}
+          <span className="underline">路由策略</span>{" "}
+          指南，了解最适合你的使用方式。
         </div>
       ),
 
@@ -91,12 +89,11 @@ function V7() {
       svg: undefined,
     },
     {
-      title: "Upgrade from Remix v2",
+      title: "从 Remix v2 升级",
       description: (
         <div>
-          Follow our checklist to quickly update your Remix application to React
-          Router and start taking advantage of new features like static
-          pre-rendering, typesafe routing and more.
+          按照我们的清单，快速将你的 Remix 应用迁移到 React
+          Router，并开始使用静态预渲染、类型安全路由等新特性。
         </div>
       ),
       slug: "upgrading/remix",
@@ -107,15 +104,13 @@ function V7() {
   return (
     <>
       <div className="max-w-[40rem]">
-        <h1 className="text-xl font-bold">React Router v7 Pre-release</h1>
+        <h1 className="text-xl font-bold">React Router v7 预发布版</h1>
         <p className="mb-2">
-          Welcome to the v7 pre-release docs. Please note a lot of information
-          here is incomplete and potentially inaccurate as we've been working
-          primarily on the code.
+          欢迎阅读 v7
+          预发布版文档。请注意，由于我们一直在集中精力开发代码，这里的部分内容可能不够完整或存在偏差。
         </p>
         <p>
-          During this time we'll be updating these docs rapidly to get ready for
-          the final release. Thanks for your patience!
+          在此期间，我们会快速更新这些文档，为正式发布做好准备。感谢你的耐心等待！
         </p>
       </div>
 
@@ -204,9 +199,9 @@ function V6() {
     ),
     },
     {
-      title: "I'm on v5",
+      title: "我在用 v5",
       description:
-        "The migration guide will help you migrate incrementally and keep shipping along the way. Or, do it all in one yolo commit! Either way, we've got you covered to start using the new features right away.",
+        "迁移指南会帮助你渐进式迁移，让你在迁移过程中也能持续发布。当然，你也可以一口气全部搞定！无论哪种方式，都能让你立即开始使用新特性。",
       slug: "upgrading/v5",
       className: "text-pink-brand",
       // prettier-ignore
